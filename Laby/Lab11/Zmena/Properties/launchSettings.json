@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Zmena": {
+      "commandName": "Project",
+      "commandLineArgs": "pokus.txt ahoj kukuc vystup.txt superheslo"
+    }
+  }
+}

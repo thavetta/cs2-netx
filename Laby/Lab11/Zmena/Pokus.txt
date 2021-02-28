@@ -1,0 +1,5 @@
+﻿Text na overeni funkcnosti
+Tady je prvni ahoj
+Tady nic
+Tady je ahoj a jeste ahoj
+Konec

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Osoby", "Osoby\Osoby.csproj", "{94E31B3F-F9AC-459B-9A75-9C169376DB14}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PouzitiOsob", "PouzitiOsob\PouzitiOsob.csproj", "{47B98517-0F0B-4026-9ECB-B32F09A801CF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{94E31B3F-F9AC-459B-9A75-9C169376DB14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94E31B3F-F9AC-459B-9A75-9C169376DB14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94E31B3F-F9AC-459B-9A75-9C169376DB14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94E31B3F-F9AC-459B-9A75-9C169376DB14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47B98517-0F0B-4026-9ECB-B32F09A801CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47B98517-0F0B-4026-9ECB-B32F09A801CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47B98517-0F0B-4026-9ECB-B32F09A801CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47B98517-0F0B-4026-9ECB-B32F09A801CF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F609CC8C-330A-48C2-A69D-4A7224E3610E}
+	EndGlobalSection
+EndGlobal
