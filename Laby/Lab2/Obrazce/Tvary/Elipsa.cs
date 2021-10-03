@@ -2,9 +2,9 @@
 {
     class Elipsa : Obrazec
     {
-        protected override string VratTyp()
+        protected override void VykresliSeInternal()
         {
-            return "elipsa";
+            System.Console.WriteLine("Tady by se resilo vykresleni elipsy");
         }
     }
 }

@@ -2,9 +2,9 @@
 {
     class Obdelnik : Obrazec
     {
-        protected override string VratTyp()
+        protected override void VykresliSeInternal()
         {
-            return "obdelnik";
+            System.Console.WriteLine("Tady by se resilo vykresleni obdelniku");
         }
     }
 

@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using Obrazce;
 using Obrazce.Tvary;
 
-namespace Obrazce
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            List<Obrazec> seznam = new List<Obrazec>
+List<Obrazec> seznam = new List<Obrazec>
             {
                 new Elipsa() {Barva = Barvy.Cervena, Poloha = new Bod() {X = 1, Y = 2}, Sirka = 100, Vyska = 50},
                 new Ctverec() {Barva = Barvy.Bila, Poloha = new Bod() {X = 5, Y = 7}, Sirka = 100, Vyska = 50},
@@ -17,17 +11,12 @@ namespace Obrazce
                 new Elipsa() {Barva = Barvy.Zelena, Poloha = new Bod() {X = 5, Y = 7}, Sirka = 100, Vyska = 50}
             };
 
-            Vypis(seznam);
+Vypis(seznam);
 
-            Console.ReadKey();
-        }
-
-        private static void Vypis(IEnumerable<IKresleni> seznam)
-        {
-            foreach (IKresleni obrazec in seznam)
-            {
-                obrazec.VykresliSe(); 
-            }
-        }
+void Vypis(IEnumerable<IKresleni> seznam)
+{
+    foreach (IKresleni obrazec in seznam)
+    {
+        obrazec.VykresliSe();
     }
 }

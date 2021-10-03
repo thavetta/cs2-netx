@@ -2,9 +2,9 @@
 {
     class Ctverec : Obrazec
     {
-        protected override string VratTyp()
+        protected override void VykresliSeInternal()
         {
-            return "ctverec";
+            System.Console.WriteLine("Tady by se resilo vykresleni ctverce");
         }
     }
 }

@@ -2,9 +2,9 @@
 {
     class Trojuhelnik : Obrazec
     {
-        protected override string VratTyp()
+        protected override void VykresliSeInternal()
         {
-            return "trojuhelnik";
+            System.Console.WriteLine("Tady by se resilo vykresleni trojuhelniku");
         }
     }
 }

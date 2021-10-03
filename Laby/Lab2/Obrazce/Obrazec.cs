@@ -49,11 +49,12 @@ namespace Obrazce
 
         public void VykresliSe()
         {
-            string typ = VratTyp();
+            string typ = this.GetType().Name;
             Vypis(typ);
+            VykresliSeInternal();
         }
 
-        protected abstract string VratTyp();
+        protected abstract void VykresliSeInternal();
 
         protected void Vypis(string typ)
         {

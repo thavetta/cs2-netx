@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Obrazce
 {
-    interface IKresleni
+    public interface IKresleni
     {
         void VykresliSe();
     }
