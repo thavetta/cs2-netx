@@ -16,7 +16,7 @@
 1. Přidejte metodu OpravRok
 1. Vytvořte konstruktor, který očekává rok jako povinný parametr
 1. Vymyslete mechanizmus, aby první objekt Osoba v aplikaci dostal ID rovné 1, druhý 2, atd. Zamyslete se i nad všemi problémy, které by při přiřazení ID mohly v moderní aplikaci nastat.
-1. Přidejte do Solution projekt PouzitiOsob typu ConsoleApp (.NET Core)
+1. Přidejte do Solution projekt PouzitiOsob typu ConsoleApp (.NET)
 1. Projekt nastavte pro nejvyšší verzi platformy .NET
 1. V projektu vytvořte statickou třídu Utils a do ní udělejte statickou extenzní metodu VratAktualniVek, která pro osobu vrátí rozdíl mezi rokem narození a aktuálním rokem
 1. Vytvořte v Program.cs metodu, která vrátí List<Osoba> s alespoň třemi osobami
