@@ -10,7 +10,7 @@ namespace DisposeLab
             DemoDispose();
             ReadKey();
 
-            //Vzhledem k optimalizacim .NET 5 je nutno instancovat class v metodě
+            //Vzhledem k optimalizacim .NET je nutno instancovat class v metodě
             DemoBezDispose();
             GC.Collect();
             GC.WaitForPendingFinalizers();
