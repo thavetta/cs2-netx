@@ -7,7 +7,7 @@ Metodu předepište pomocí interface IKresleni.
 * Aplikace bude udržovat pole obrazců a bude obsahovat metodu, ve které dojde k vykreslení všech obrazců.
 
 ## Doporučení k postupu
-1. Konzolová aplikace pro .NET 6.
+1. Konzolová aplikace pro .NET 
 1. Vytvořte pomocnou strukturu Bod (souřadnice X a Y a metoda pro výpis ToString()) a enum Barvy s výčtem několika základních barev.
 1. Abstraktní třída Obrazec, která bude implementovat IKresleni a bude obsahovat vlastnosti pro barvu, pozici, šířku a výšku.
 1. Konkétní typy obrazců budou řešit pouze to čím se vzájemně liší. Pro přehlednost projektu je umístěte do samostatné složky Tvary a použijte korektně namespace.
