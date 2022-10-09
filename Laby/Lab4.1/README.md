@@ -10,7 +10,7 @@ h => hod, 1 => zobrazeni 1, 2 => zobrazeni 2, q => konec
 1. Vytvořte projekt typu Class Library s názvem Kostky
 1. Zrušte třídu Class1 a vytvořte třídu HraciKostka s vlastnostmi Hodnota, MaxHodnota a metodou HodKostky dle zadání
 1. Použijte generátor náhodných čísel (třída Random) pro simulaci hodu kostkou
-1. Přidejte do solution projekt Console App .NET Core  s názvem Hra
+1. Přidejte do solution projekt Console App .NET s názvem Hra
 1. Přidejte novému projektu referenci na knihovnu Kostky
 1. V novém projektu vytvořte třídy ZobrazovacTextem a ZobrazovacZnakem pro různé způsoby zobrazení výsledku hodu kostkou
 1. Ve třídách vytvořte nějakou metodu vracející void a s jedním parametrem int. Název metody dle fantazie
