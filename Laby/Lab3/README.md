@@ -4,7 +4,7 @@
 * Vytvořte aplikaci, které předáte string a ona spočítá počet výskytů jednotlivých znaků. Po zpracování vypíše nejdřív setříděně znaky a jejich počet výskytů, a pak setříděně podle počtu výskytů jednotlivé znaky. Nealfanumerické znaky ignorujte. Pro zpracování dat využijte generické kolekce.
 ## Doporučený postup
   ### Rychlost
-  1. Vytvořte consolovou aplikaci pro .NET 5
+  1. Vytvořte consolovou aplikaci pro .NET
   1. Připravte instanci List<int> a HashSet<int> pro 1 000 000 prvků
   1. Nachystejte si instanci třídy Stopwatch (namespace System.Diagnostics)
   1. V cyklu for naplňte nejdřív List, pak HashSet a změřte každému typu čas plnění
@@ -16,7 +16,7 @@
   1. Poexperimentujte s hledaným číslem (menší než 1000, kolem 250 tisíc, 500 tisíc a těsně pod milion)
   1. Srovnejte chování času u List<int> a HashSet<int> pro různé hledané čísla.
   ### Počítač písmen
-  1. Vytvořte consolovou aplikaci pro .NET 5
+  1. Vytvořte consolovou aplikaci pro .NET 
   1. Nachystejte si nějaký testovací řetězec
   1. Naprogramujte metodu SpocitejVyskytPismen(string vstup), která vrátí kolekci typu SortedDictionary<char,int>.
      Metoda projde všechna písmenka vstupního řetězce, vyřadí nealfanumerické znaky (podívejte se na statické metody třídy Char) a do výsledné Dictionary dá jako klíč písmeno a k němu napočítá počet výskytů. Výsledné SortedDictionary je návratovou hodnotou. 
