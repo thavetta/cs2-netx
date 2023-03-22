@@ -5,60 +5,85 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Obrazce
+namespace Obrazce;
+
+/// <summary>
+/// Abstraktní třída pro definici obecného obrazce
+/// </summary>
+public abstract class Obrazec : IKresleni
 {
-    public abstract class Obrazec : IKresleni
+    private Bod poloha;
+
+    /// <summary>
+    /// Property definující polohu levého horního rohu oblasti zabírané obrazcem
+    /// </summary>
+    public Bod Poloha
     {
-        private Bod poloha;
+        get { return poloha; }
+        set { poloha = value; }
+    }
 
-        public Bod Poloha
+    private Barvy barva;
+
+    /// <summary>
+    /// Property definující barvu obrazce
+    /// </summary>
+    public Barvy Barva
+    {
+        get { return barva; }
+        set
         {
-            get { return poloha; }
-            set { poloha = value; }
+            // kontrola, zda je hodnota v rozsahu enumu
+            if (Enum.IsDefined(typeof(Barvy), value))
+                barva = value;
+            else
+                throw new InvalidEnumArgumentException("Barva",(int) value, typeof(Barvy));
         }
+    }
 
-        private Barvy barva;
+    private uint vyska;
 
-        public Barvy Barva
-        {
-            get { return barva; }
-            set
-            {
-                if (Enum.IsDefined(typeof(Barvy), value))
-                    barva = value;
-                else
-                    throw new InvalidEnumArgumentException("Barva",(int) value, typeof(Barvy));
-            }
-        }
+    /// <summary>
+    /// Výška prostoru který obrazec zabírá. Díky typu nelze zadat záporné číslo.
+    /// </summary>
+    public uint Vyska
+    {
+        get { return vyska; }
+        set { vyska = value; }
+    }
 
-        private uint vyska;
+    private uint sirka;
 
-        public uint Vyska
-        {
-            get { return vyska; }
-            set { vyska = value; }
-        }
+    /// <summary>
+    /// Šířka prostoru který obrazec zabírá. Díky typu nelze zadat záporné číslo.
+    /// </summary>
+    public uint Sirka
+    {
+        get { return sirka; }
+        set { sirka = value; }
+    }
 
-        private uint sirka;
+    /// <summary>
+    /// Metoda pro vykreslení obrazce, implementuje rozhraní IKresleni
+    /// </summary>
+    public void VykresliSe()
+    {
+        string typ = this.GetType().Name;
+        Vypis(typ);
+        VykresliSeInternal();
+    }
 
-        public uint Sirka
-        {
-            get { return sirka; }
-            set { sirka = value; }
-        }
+    /// <summary>
+    /// Interní metoda pro vykreslení obrazce, která je implementována v potomcích
+    /// </summary>
+    protected abstract void VykresliSeInternal();
 
-        public void VykresliSe()
-        {
-            string typ = this.GetType().Name;
-            Vypis(typ);
-            VykresliSeInternal();
-        }
-
-        protected abstract void VykresliSeInternal();
-
-        protected void Vypis(string typ)
-        {
-            Console.WriteLine("Vykresluji obrazec {0} barvou {1} na pozici {2} o rozmerech {3} x {4}",typ,this.Barva,this.Poloha,this.Sirka,this.Vyska);
-        }
+    /// <summary>
+    /// Interní metoda pro výpis informací o obrazci dle zadání v požadavcích na aplikaci
+    /// </summary>
+    /// <param name="typ"></param>
+    protected void Vypis(string typ)
+    {
+        Console.WriteLine("Vykresluji obrazec {0} barvou {1} na pozici {2} o rozmerech {3} x {4}",typ,this.Barva,this.Poloha,this.Sirka,this.Vyska);
     }
 }

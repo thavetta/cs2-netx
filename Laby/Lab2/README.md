@@ -1,10 +1,10 @@
 # Lab 2
 ## Aplikace obrazce 1.0
-* Aplikace umožňuje vykreslovat obrazce (čtverec, kruh, obdélník, elipsa, rovnoramenný trojúhelník).
+* Aplikace umožňuje vykreslovat obrazce (čtverec, kruh, obdélník, elipsa, trojúhelník).
 * Každý obrazec má barvu, kterou se vykreslí, definici levého horního rohu, výšku a šířku.
 * Každý obrazec má metodu VykresliSe(), která na konzoli vypíše text „Vykresluji obrazec xxxx barvou yyyyy na pozici [A,B] o rozměrech X x Y." 
 Metodu předepište pomocí interface IKresleni.
-* Aplikace bude udržovat pole obrazců a bude obsahovat metodu, ve které dojde k vykreslení všech obrazců.
+* Aplikace bude udržovat seznam obrazců a bude obsahovat metodu, ve které dojde k vykreslení všech obrazců.
 
 ## Doporučení k postupu
 1. Konzolová aplikace pro .NET 

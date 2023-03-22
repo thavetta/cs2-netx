@@ -4,16 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Obrazce
+namespace Obrazce;
+
+/// <summary>
+/// Enumerátor pro definici podporované barvy
+/// </summary>
+public enum Barvy
 {
-    public enum Barvy
-    {
-        Bila,
-        Zluta,
-        Modra,
-        Cervena,
-        Zelena,
-        Hneda,
-        Cerna
-    }
+    Bila,
+    Zluta,
+    Modra,
+    Cervena,
+    Zelena,
+    Hneda,
+    Cerna
 }
